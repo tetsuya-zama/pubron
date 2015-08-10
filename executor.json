@@ -1,0 +1,6 @@
+[
+  {
+    "msg":"test_msg",
+    "cmd":"echo ##DATA## >> test.log"
+  }
+]
