@@ -60,7 +60,7 @@ Check 'executor.json' on this repository.
 ###stop process
 `$ ./stop_pubron.sh`
 ###send massage
-[quick sample of python PubNub massage]
+[quick sample of python PubNub message]
 
     from pubnub import Pubnub
     import json
@@ -70,7 +70,7 @@ Check 'executor.json' on this repository.
     message = {"msg":"test_msg","data":{"test":"hoge"}}
     pubnub.publish(channel="pubron",message=json.dumps(message))
 
-[quick sample of python Redis massage]
+[quick sample of python Redis message]
 
     from redis import Redis
     import json
