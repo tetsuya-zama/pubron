@@ -10,6 +10,7 @@ Shell command kicker by subscribing pub-sub message.
 ##Setting
 ###subscriber.json
 Check 'subscriber.json' on this repository.
+
 Change settings for your PubNub or Redis (or both) environment.
 
 ###executor.json
