@@ -2,7 +2,9 @@
 Shell command kicker by subscribing pub-sub message.
 
 ##Install
+
 `$git clone https://github.com/tetsuya-zama/pubron`
+
 `$pip install -r packages.txt`
 
 ##Setting
@@ -12,17 +14,21 @@ Change settings for your PubNub or Redis (or both) environment.
 
 ###executor.json
 Check 'executor.json' on this repository.
+
 'msg' attribute for message name for kick this 'cmd'.
+
 'cmd' attribute for shell command.
 
 '##key_name##' will be place holder for retrieve 'data' of message.
 
 [example setting]
+
     {
       "msg":"test_message"
       "cmd":"echo ##some_key##"
     }
 [example message]
+
     {
       "msg":"test_message"
       "data":{"some_key":"some_val"}
@@ -33,11 +39,13 @@ Check 'executor.json' on this repository.
 '##DATA##' is reserved place holder name for retrieve whole data in json format.
 
 [example setting]
+
     {
       "msg":"test_message"
       "cmd":"echo ##DATA##"
     }
 [example message]
+
     {
       "msg":"test_message"
       "data":{"some_key":"some_val"}
@@ -52,6 +60,7 @@ Check 'executor.json' on this repository.
 `$ ./stop_pubron.sh`
 ###send massage
 [quick sample of python PubNub massage]
+
     from pubnub import Pubnub
     import json
 
@@ -61,6 +70,7 @@ Check 'executor.json' on this repository.
     pubnub.publish(channel="pubron",message=json.dumps(message))
 
 [quick sample of python Redis massage]
+
     from redis import Redis
     import json
 
