@@ -1,15 +1,15 @@
 [
   {
     "type":"pubnub",
-    "sub-key":"sub-c-b06c52a2-3eeb-11e5-a4b2-0619f8945a4f",
-    "pub-key":"pub-c-9ef26b5d-8796-4bf6-bd3a-893c2efcefec",
+    "sub-key":"pubnub subscribe key",
+    "pub-key":"pubnub publish key",
     "channel":"pubron"
   },
   {
     "type":"redis",
     "host":"localhost",
     "port":"6379",
-    "password_":"redis-pass",
+    "password":"redis-pass",
     "channel":"pubron"
   }
 ]
